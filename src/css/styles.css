@@ -51,6 +51,11 @@ body {
   font-size: 1.3rem;
 }
 
+.main {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
 a {
   color: rgb(217, 106, 164);
 }
