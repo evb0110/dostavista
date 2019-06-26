@@ -17,6 +17,7 @@ words.forEach((word, i, words) => {
 
 const anchor = document.createElement('a');
 anchor.href = '#';
+anchor.className = 'large';
 anchor.append(fragment);
 
 root.append(anchor);
