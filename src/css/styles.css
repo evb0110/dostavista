@@ -137,7 +137,6 @@ a {
   .feature:not(:last-child) .icon::after {
     transform: scale(1.1);
   }
-
 }
 
 @media (max-width: 949px) {
