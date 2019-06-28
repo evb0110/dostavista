@@ -22,7 +22,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: grey;
+  background-color: rgb(155, 141, 103);
   text-align: center;
 }
 
@@ -151,7 +151,7 @@ a {
   .feature {
     display: flex;
     margin: 0;
-    padding: 2rem;
+    padding: 2rem 0;
     align-items: center;
   }
 
@@ -264,7 +264,7 @@ a {
 
   .feature {
     flex-direction: column;
-    padding: 4rem 3rem 2rem 3rem;
+    padding: 4rem 0 2rem 0;
   }
 
   .feature1 {
