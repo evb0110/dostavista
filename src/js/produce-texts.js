@@ -1,3 +1,4 @@
+const splitter = ' ';
 const elems = document.getElementsByClassName('text');
 
 for (const elem of elems) {
@@ -5,14 +6,14 @@ for (const elem of elems) {
 }
 
 function fillElementCollapsible(text, element) {
-  const words = text.split(' ');
+  const words = text.split(splitter);
   const fragment = document.createDocumentFragment();
   words.forEach((word, i, words) => {
     const span = makeCollapsibleSpan(word);
     fragment.append(span);
     if (i < words.length - 1) {
-      const space = makeSpan(' ');
-      fragment.append(space);
+      const splitterSpan = makeSpan(splitter);
+      fragment.append(splitterSpan);
     }
   });
   element.removeChild(element.firstChild);
