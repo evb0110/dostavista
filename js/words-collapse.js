@@ -8,7 +8,7 @@ const elems = document.getElementsByClassName('text');
 // в каждом таком элементе заменяем текст на тот же текст
 // со словами, исчезающими по клику
 for (const elem of elems) {
-  fillElementCollapsible(elem.innerText, elem);
+  fillElementCollapsible(elem.textContent, elem);
 }
 
 // заполняет элемент DOMа текстом, слова которого
@@ -24,7 +24,7 @@ function fillElementCollapsible(text, element) {
       fragment.append(splitterSpan);
     }
   });
-  element.removeChild(element.firstChild);
+  element.textContent = '';
   element.append(fragment);
 }
 
